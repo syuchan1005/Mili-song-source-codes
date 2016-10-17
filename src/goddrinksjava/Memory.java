@@ -5,6 +5,7 @@ package goddrinksjava;
  */
 public class Memory {
 	public boolean isErasable() {
+		System.out.println("FRAGMENTS");
 		return true;
 	}
 
