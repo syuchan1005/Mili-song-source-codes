@@ -15,7 +15,6 @@ public class GodDrinksJava {
 		world.addThing(me);
 		world.addThing(you);
 		world.startSimulation();
-
 		if (me instanceof PointSet) {
 			you.addAttribute(me.getDimensions().toAttribute());
 			me.resetDimensions();
@@ -30,14 +29,12 @@ public class GodDrinksJava {
 		if (me instanceof Sequence) {
 			me.setLimit(you.toLimit());
 		}
-
 		me.toggleCurrent();
 		me.canSee(false);
 		me.addFeeling("dizzy");
-		world.timeTravelForTwo(AD, 617, me, you);
-		world.timeTravelForTwo(BC, 3691, me, you);
+		world.timeTravelForTwo("AD", 617, me, you);
+		world.timeTravelForTwo("BC", 3691, me, you);
 		world.unite(me, you);
-
 		if (me.getNumSimulationsAvailable() >=
 				you.getNumSimulationsNeeded()) {
 			you.setSatisfaction(me.toSatisfaction());
@@ -54,7 +51,7 @@ public class GodDrinksJava {
 		}
 		if (me instanceof Tomato) {
 			you.addAttribute(me.getAntioxidants().toAttribute());
-			me.resetAntioxidants;
+			me.resetAntioxidants();
 		}
 		if (me instanceof TabbyCat) {
 			me.purr();
