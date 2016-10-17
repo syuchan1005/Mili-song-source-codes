@@ -98,7 +98,7 @@ public class Thing implements PointSet, Circle, SineWave, Sequence, Eggplant, To
 	}
 
 	public int getOpinionIndex(String var1) {
-		Opinion[] opinions = (Opinion[]) this.opinions.toArray();
+		Opinion[] opinions = this.opinions.toArray(new Opinion[0]);
 		for (int i = 0; i < opinions.length; i++) {
 			if (opinions[i].getVar1().equalsIgnoreCase(var1)) return i;
 		}
