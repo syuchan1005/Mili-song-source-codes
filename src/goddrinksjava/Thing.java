@@ -93,12 +93,12 @@ public class Thing implements PointSet, Circle, SineWave, Sequence, Eggplant, To
 		feelings.remove(feel);
 	}
 
-	public int getNumSimulationsAvailable() {
+	public int getNumStimulationsAvailable() {
 		System.out.println("If I can");
 		return 0;
 	}
 
-	public int getNumSimulationsNeeded() {
+	public int getNumStimulationsNeeded() {
 		System.out.println("If I can give you all the\n" +
 				"STIMULATIONS");
 		return 0;
