@@ -35,8 +35,8 @@ public class GodDrinksJava {
 		world.timeTravelForTwo("AD", 617, me, you);
 		world.timeTravelForTwo("BC", 3691, me, you);
 		world.unite(me, you);
-		if (me.getNumSimulationsAvailable() >=
-				you.getNumSimulationsNeeded()) {
+		if (me.getNumStimulationsAvailable() >=
+				you.getNumStimulationsNeeded()) {
 			you.setSatisfaction(me.toSatisfaction());
 		}
 		if (you.getFeelingIndex("happy") != -1) {
