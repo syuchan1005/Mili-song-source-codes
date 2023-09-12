@@ -15,6 +15,7 @@ public class GodDrinksJava {
 		world.addThing(me);
 		world.addThing(you);
 		world.startSimulation();
+
 		if (me instanceof PointSet) {
 			you.addAttribute(me.getDimensions().toAttribute());
 			me.resetDimensions();
@@ -29,12 +30,14 @@ public class GodDrinksJava {
 		if (me instanceof Sequence) {
 			me.setLimit(you.toLimit());
 		}
+
 		me.toggleCurrent();
 		me.canSee(false);
 		me.addFeeling("dizzy");
 		world.timeTravelForTwo("AD", 617, me, you);
 		world.timeTravelForTwo("BC", 3691, me, you);
 		world.unite(me, you);
+
 		if (me.getNumStimulationsAvailable() >=
 				you.getNumStimulationsNeeded()) {
 			you.setSatisfaction(me.toSatisfaction());
@@ -71,7 +74,6 @@ public class GodDrinksJava {
 		}
 		world.unlock(you);
 		world.removeThing(you);
-
 		me.lookFor(you, world);
 		me.lookFor(you, world);
 		me.lookFor(you, world);
@@ -81,6 +83,7 @@ public class GodDrinksJava {
 		if (me.getMemory().isErasable()) {
 			me.removeFeeling("disheartened");
 		}
+
 		try {
 			me.setOpinion(me.getOpinionIndex("you are here"), false);
 		} catch (IllegalArgumentException e) {
