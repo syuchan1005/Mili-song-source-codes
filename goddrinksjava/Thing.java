@@ -129,6 +129,7 @@ public class Thing implements PointSet, Circle, SineWave, Sequence, Eggplant, To
 					e.printStackTrace();
 				}
 			}
+			default -> throw new IllegalArgumentException("Unexpected value: " + feel);
 		}
 		feelings.add(feel);
 	}
