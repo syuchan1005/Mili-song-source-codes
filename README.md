@@ -1,11 +1,10 @@
-あくまでもこのプログラムは「それっぽくみえる」クラス構成を目標に構成されています。
-また、表示する際の改行については作者の独断です。
-原作に基づくため[GodDrinksJava.java]は改変を加えていません
+Transcribed source code displayed in the background of Mili's songs.
 
-問題・質問はこちらのTwitter[@syu_chan_1005](https://twitter.com/syu_chan_1005)までお願いします
+Some files have been added to make the source code executable.
+It also displays the lyrics at runtime.
 
-また問題が起きた場合、即座に公開を停止します
+Also, in case of problems, I will immediately make this repository private.
 
-## Youtube
-
-[![](http://img.youtube.com/vi/ESx_hy1n7HA/0.jpg)](https://www.youtube.com/watch?v=ESx_hy1n7HA)
+| source code                                                |                                                      YouTube                                                       |
+|:-----------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------:|
+| [GodDrinksJava.java](src/goddrinksjava/GodDrinksJava.java) | [world.execute(me); ![](http://img.youtube.com/vi/ESx_hy1n7HA/0.jpg)](https://www.youtube.com/watch?v=ESx_hy1n7HA) |
